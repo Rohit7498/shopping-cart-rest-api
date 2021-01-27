@@ -1,4 +1,4 @@
-# REST API FOR Shooping Cart - Ecommerce
+# REST API FOR Shopping Cart - Ecommerce
 
 ### Shopping Cart
 GET http://localhost:3000/shoppingCarts/
