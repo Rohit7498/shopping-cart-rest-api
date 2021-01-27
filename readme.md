@@ -4,7 +4,7 @@
 GET http://localhost:3000/shoppingCarts/
 
 ### Getting carts by cartId
-GET http://localhost:3000/shoppingCarts/<cartId>
+GET http://localhost:3000/shoppingCarts/cartId
 
 ### Creating Carts
 POST http://localhost:3000/shoppingCarts/
@@ -46,27 +46,27 @@ Content-Type: application/json
 }
 
 ### Remove specific product
-POST http://localhost:3000/shoppingCarts/<cartId>/remove/<prodId>
+POST http://localhost:3000/shoppingCarts/cartId/remove/prodId
 Content-Type: application/json
 
 
 ########## ORDERS ############
 
 ## Convert products in the cart of a user to order
-POST http://localhost:3000/shoppingCarts/<userId>/add/
+POST http://localhost:3000/shoppingCarts/userId/add/
 Content-Type: application/json
 
 
 ### Get Orders by specific users
-GET http://localhost:3000/shoppingCarts/<userId>/
+GET http://localhost:3000/shoppingCarts/userId/
 
 
 ### Complete Orders by specific users
-POST http://localhost:3000/shoppingCarts/<userId>/complete
+POST http://localhost:3000/shoppingCarts/userId/complete
 
 
 ### Remove products from Orders by specific users
-POST http://localhost:3000/shoppingCarts/<userId>/remove/<orderId>/<prodId>
+POST http://localhost:3000/shoppingCarts/userId/remove/orderId/prodId
 
 
 ### Get all Orders
